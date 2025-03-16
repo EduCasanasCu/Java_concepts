@@ -1,4 +1,4 @@
-package Optional;
+package Optional.ejem1;
 
 import java.util.Scanner;
 
@@ -14,6 +14,8 @@ public class PersonaOptional {
         this.apellido = apellido;
         this.telefono = telefono;
         this.email = email;
+    }
+    public PersonaOptional() {
     }
 
     public String getNombre() {
@@ -53,19 +55,19 @@ public class PersonaOptional {
     }
 
     public void cargaDatos(){
-        Scanner ingreso = new Scanner(System.in);
+        try (Scanner ingreso = new Scanner(System.in)) {
+            System.out.println("Ingrese el nombre: ");
+            nombre = ingreso.nextLine();
 
-        System.out.println("Ingrese el nombre: ");
-        nombre = ingreso.nextLine();
+            System.out.println("Ingrese el apellido: ");
+            apellido = ingreso.nextLine();
 
-        System.out.println("Ingrese el apellido: ");
-        apellido = ingreso.nextLine();
+            System.out.println("Ingrese el telefono: ");
+            telefono = ingreso.nextLine();
 
-        System.out.println("Ingrese el telefono: ");
-        telefono = ingreso.nextLine();
-
-        System.out.println("Ingrese el email: ");
-        email = ingreso.nextLine();
+            System.out.println("Ingrese el email: ");
+            email = ingreso.nextLine();
+        }
 
     }
 }

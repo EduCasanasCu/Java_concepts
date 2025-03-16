@@ -1,4 +1,4 @@
-package Optional;
+package Optional.ejem1;
 
 import java.util.Optional;
 
@@ -12,7 +12,7 @@ public class OptionalMain {
     }
 
     public static Optional<PersonaOptional> getCliente(int id){
-        PersonaOptional cliente = new PersonaOptional("edu","cas","09384885","edu@gmail.com");
+        PersonaOptional cliente = new PersonaOptional();
         return Optional.of(cliente);
     }
 }
