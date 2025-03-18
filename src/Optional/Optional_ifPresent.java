@@ -2,7 +2,7 @@ package Optional;
 
 import java.util.Optional;
 
-public class OptionalifPresent {
+public class Optional_ifPresent {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package Optional;
 
 import java.util.Optional;
 
-public class OptionalWithMap {
+public class Optional_Map {
 
     public static void main(String[] args) {
 

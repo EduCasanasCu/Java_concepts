@@ -2,7 +2,7 @@ package Optional;
 
 import java.util.Optional;
 
-public class OptionalWithValue {
+public class Optional_WithValue {
 
     public static void main(String[] args) {
 
